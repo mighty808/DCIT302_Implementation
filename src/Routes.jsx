@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes as RouterRoutes, Route } from 'react-ro
 import CheckResults from './pages/CheckResults';
 import ViewResults from './pages/ViewResults';
 import BuyCheckerPage from './pages/BuyCheckerPage';
-import Faqs from './pages/faqs';
 import AboutPage from './pages/AboutPage';
 import GetVoucher from './pages/GetVoucher';
+import Faq from './pages/Faq';
 
 const Routes = () => {
   return (
@@ -15,7 +15,7 @@ const Routes = () => {
             <Route path='/check-results' element={<CheckResults />} />
             <Route path='/view-results' element={<ViewResults />} />
             <Route path='/buycheckerpage' element={<BuyCheckerPage />} />
-            <Route path='/faqs' element={<Faqs />} />
+            <Route path='/faq' element={<Faq />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/voucher' element={<GetVoucher />} />
         </RouterRoutes>

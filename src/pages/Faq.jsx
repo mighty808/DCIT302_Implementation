@@ -1,8 +1,6 @@
-import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+import React from 'react'
 
-
-const Faqs = () => {
+const Faq = () => {
   const faqs = [
     {
       question: "How do I check my WASSCE results online?",
@@ -78,4 +76,4 @@ const Faqs = () => {
   )
 }
 
-export default Faqs
+export default Faq

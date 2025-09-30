@@ -50,7 +50,7 @@ const Navbar = () => {
                 Buy Checker
               </a>
               <a
-                href="/faqs"
+                href="/faq"
                 className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 Faqs
@@ -126,7 +126,7 @@ const Navbar = () => {
             Buy Checker
           </a>
           <a
-            href="/faqs"
+            href="/faq"
             className="text-gray-700 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             Faqs

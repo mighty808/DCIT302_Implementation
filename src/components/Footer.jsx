@@ -14,7 +14,7 @@ const Footer = () => {
               <li><a href="/about" className="hover:text-blue-400 transition duration-300">About</a></li>
               <li><a href="https://waecgh.org/timetable/#" target='_blank' className="hover:text-blue-400 transition duration-300">Exams</a></li>
               <li><a href="/voucher" className="hover:text-blue-400 transition duration-300">Voucher</a></li>
-              <li><a href="/faqs" className="hover:text-blue-400 transition duration-300">Faqs</a></li>
+              <li><a href="/faq" className="hover:text-blue-400 transition duration-300">Faqs</a></li>
             </ul>
           </div>
 

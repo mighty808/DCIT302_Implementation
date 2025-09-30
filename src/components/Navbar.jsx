@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,22 +14,24 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="w-16">
-            <img src={assets.wassceLogo} alt="WAEC Logo" />
-          </div>
+         <Link to='/'> 
+             <div className="w-16">
+                <img src={assets.wassceLogo} alt="WAEC Logo" />
+            </div>
+         </Link>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <a
                 href="/"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                className="text-gray-900 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 Home
               </a>
               <a
                 href="/about"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 About WAEC
               </a>
@@ -36,25 +39,25 @@ const Navbar = () => {
                 href="https://waecgh.org/timetable/#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 Exams
               </a>
               <a
                 href="/buycheckerpage"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 Buy Checker
               </a>
               <a
                 href="/faqs"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
               >
                 Faqs
               </a>
               <a
                 href="/check-results"
-                className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition duration-300 ml-4"
+                className="bg-purple-600 text-white hover:bg-purple-700 px-4 py-2 rounded-md text-sm font-medium transition duration-300 ml-4"
               >
                 Check Results
               </a>
@@ -98,13 +101,13 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
           <a
             href="/"
-            className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </a>
           <a
             href="/about"
-            className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             About WAEC
           </a>
@@ -112,25 +115,25 @@ const Navbar = () => {
             href="https://waecgh.org/timetable/#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             Exams
           </a>
           <a
             href="/buycheckerpage"
-            className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             Buy Checker
           </a>
           <a
             href="/faqs"
-            className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-purple-600 block px-3 py-2 rounded-md text-base font-medium"
           >
             Faqs
           </a>
           <a
             href="/check-results"
-            className="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium mt-2"
+            className="bg-blue-600 text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium mt-2"
           >
             Check Results
           </a>

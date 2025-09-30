@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 const Check = () => {
   const [formData, setFormData] = useState({
@@ -135,7 +136,7 @@ const Check = () => {
                           onChange={handleInputChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           placeholder="Enter your index number"
-                          required
+                          // required
                         />
                       </div>
                       <div>
@@ -147,7 +148,7 @@ const Check = () => {
                           value={formData.examType}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          required
+                          // required
                         >
                           <option value="">Select Your Exams Type</option>
                           <option value="WASSCE">WASSCE</option>
@@ -309,12 +310,14 @@ const Check = () => {
                       >
                         Back
                       </button>
-                      <button
+                      <Link to='/view-results'>
+                        <button
                         type="submit"
                         className="flex-1 bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300 font-semibold"
                       >
                         Submit
                       </button>
+                      </Link>
                     </div>
                   )}
                 </div>

@@ -31,9 +31,9 @@ const Faqs = () => {
       <Navbar />
 
       {/* Header */}
-          <div className="text-center mb-12 p-20 bg-purple-500 mt-20">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4 text-white">Frequently Asked Questions</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto text-white">
+          <div className="text-center mb-12 p-20 bg-purple-600 mt-20">
+            <h1 className="text-4xl font-bold mb-4 text-white">Frequently Asked Questions</h1>
+            <p className="text-lg max-w-2xl mx-auto text-white">
               Secure your WAEC Results Checker PIN and access your results instantly and securely.
             </p>
           </div>

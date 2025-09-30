@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
+import { Link } from 'react-router-dom'
 
 const ViewResults = () => {
   const resultsData = {
@@ -141,7 +142,7 @@ const ViewResults = () => {
                       </td>
                       <td className="py-3 text-right">
                         <span className="text-lg font-semibold text-gray-700">
-                          – {subject.remark}
+                           {subject.remark}
                         </span>
                       </td>
                     </tr>
@@ -172,9 +173,11 @@ const ViewResults = () => {
             >
               Print Results
             </button>
-            <button className="bg-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-400 transition duration-300 font-semibold">
+            <Link to='/check-results'>
+                  <button className="bg-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-400 transition duration-300 font-semibold cursor-pointer">
               Check Another Result
             </button>
+            </Link>
           </div>
 
         </div>

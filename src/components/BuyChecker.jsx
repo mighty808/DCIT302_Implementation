@@ -24,7 +24,7 @@ const BuyChecker = () => {
 
       {/* CTA Button */}
       <Link to="/buycheckerpage">
-        <button className="bg-purple-700 text-white font-semibold text-lg px-10 py-3 rounded-lg hover:bg-purple-800 transition">
+        <button className="bg-purple-700 text-white font-semibold text-lg px-10 py-3 rounded-lg hover:bg-purple-800 transition cursor-pointer">
         Buy Now
       </button> 
       </Link>

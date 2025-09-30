@@ -4,6 +4,7 @@ import ViewResults from './pages/ViewResults';
 import BuyCheckerPage from './pages/BuyCheckerPage';
 import Faqs from './pages/faqs';
 import AboutPage from './pages/AboutPage';
+import GetVoucher from './pages/GetVoucher';
 
 const Routes = () => {
   return (
@@ -16,6 +17,7 @@ const Routes = () => {
             <Route path='/buycheckerpage' element={<BuyCheckerPage />} />
             <Route path='/faqs' element={<Faqs />} />
             <Route path='/about' element={<AboutPage />} />
+            <Route path='/voucher' element={<GetVoucher />} />
         </RouterRoutes>
       </Router>
     </div>

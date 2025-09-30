@@ -66,7 +66,7 @@ const FeaturedServices = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
                 {/* Placeholder for WAEC logo */}
-                <span className="text-xs">Logo</span>
+                <span className="text-xs">WAEC</span>
               </div>
               <div>
                 <p className="text-gray-900 font-medium">{service.examination}</p>
@@ -75,12 +75,12 @@ const FeaturedServices = () => {
             </div>
 
             {/* Company */}
-            <p className="text-sm text-gray-500 mb-4">{service.company}</p>
+            <p className="text-sm text-gray-500 mb-4 text-center pt-4">{service.company}</p>
 
             {/* Button */}
-            <button className="mt-auto w-full bg-white border border-purple-600 text-purple-600 py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition">
+            {/* <button className="mt-auto w-full bg-white border border-purple-600 text-purple-600 py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition">
               {service.buttonText}
-            </button>
+            </button> */}
           </div>
         ))}
       </div>

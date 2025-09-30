@@ -4,17 +4,17 @@ const Footer = () => {
   return (
     <footer className="bg-purple-700 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-50">
           
           {/* Quick Links Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
             <ul className="space-y-2">
               <li><a href="/" className="hover:text-blue-400 transition duration-300">Home</a></li>
-              <li><a href="/about" className="hover:text-blue-400 transition duration-300">About WAEC</a></li>
-              <li><a href="/exams" className="hover:text-blue-400 transition duration-300">Exams</a></li>
-              <li><a href="/buy-checker" className="hover:text-blue-400 transition duration-300">Buy Checker</a></li>
-              <li><a href="/services" className="hover:text-blue-400 transition duration-300">Services</a></li>
+              <li><a href="/about" className="hover:text-blue-400 transition duration-300">About</a></li>
+              <li><a href="https://waecgh.org/timetable/#" target='_blank' className="hover:text-blue-400 transition duration-300">Exams</a></li>
+              <li><a href="/voucher" className="hover:text-blue-400 transition duration-300">Voucher</a></li>
+              <li><a href="/faqs" className="hover:text-blue-400 transition duration-300">Faqs</a></li>
             </ul>
           </div>
 
@@ -30,8 +30,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-300">
-              <p>Accra, Ghana</p>
-              <p>Call now: +91 9561776078</p>
+              <p>Head Office - Examination Loop Behind Ridge Hospital</p>
+              <p>P. O. Box 917, Accra</p>
+              <p>Call now: +233 302 208201-9</p>
             </div>
           </div>
         </div>

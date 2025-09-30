@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { assets } from "../assets/assets";
+import { Link } from 'react-router-dom'
+
 
 const BuyCheckerPage = () => {
   const [formData, setFormData] = useState({
@@ -118,12 +120,14 @@ const BuyCheckerPage = () => {
                 </div>
 
                 {/* Buy Now Button */}
-                <button 
+                <Link to='/voucher'>
+                    <button 
                   type="submit"
-                  className="w-full bg-purple-700 text-white font-semibold text-lg py-3 rounded-lg hover:bg-purple-800 transition duration-300"
+                  className="w-full bg-purple-700 text-white font-semibold text-lg py-3 rounded-lg hover:bg-purple-800 transition duration-300 cursor-pointer"
                 >
                   Buy Now - GHS {(formData.quantity * 15).toFixed(2)}
                 </button>
+                </Link>
               </form>
             </div>
 
